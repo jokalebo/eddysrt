@@ -1,2 +1,2 @@
 # eddysrt
-R code for Calculating Surface Renewal parameters : A and Tau (T) are the mean ramp amplitude and inverse ramp frequency over the averaging period.
+R code for Calculating Surface Renewal parameters : A and Tau (T) are the mean ramp amplitude and inverse ramp frequency respectively over the averaging period.
