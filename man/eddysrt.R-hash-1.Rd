@@ -5,12 +5,12 @@
 \alias{eddysrt.R#1}
 \title{: Surface Renewal Parameters}
 \usage{
-eddysrt(z, df)
+eddysrt(z, eddyD)
 }
 \arguments{
 \item{z}{A value of 20 is utilized (derived from 20 Hz per second of data measurement)}
 
-\item{df}{The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values}
+\item{eddyD}{The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values}
 }
 \value{
 a numeric matrix vector with 3 values ( rvalue, tau and amplitude)
