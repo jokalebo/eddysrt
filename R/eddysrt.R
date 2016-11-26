@@ -10,14 +10,15 @@
 #' This function will take in the 30 minute -20 Hz dataset and calculate tau, amplitude and r
 #'
 #' @param z A value of 20 is utilized (derived from 20 Hz per second of data measurement)
-#' @param df The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values
+#' @param eddyD The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values
 #' @return a numeric matrix vector with 3 values ( rvalue, tau and amplitude)
 #' @details The matrix vector:rvalue (seconds) - maximum ratio of 3rd moment to r, tau (total ramp duration) and amplitude of ramp
 #' @seealso{NISTunits}
 #' @export
 #'
 #'
-eddysrt <-function(z, df){
+eddysrt <-function(z, eddyD){
+  df<-eddyD
   dat <- data.frame(col1=numeric(z), col2=numeric(z), col3=numeric(z),stringsAsFactors = FALSE)
 ##require(NISTunits)
 df$H2O<-1000*df$H2O/18.01528
