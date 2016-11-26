@@ -8,12 +8,12 @@
 eddysrt(z, df)
 }
 \arguments{
-\item{z}{20 rows derived from 20 Hz per second}
+\item{z}{A value of 20 is utilized (derived from 20 Hz per second of data measurement)}
 
 \item{df}{The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values}
 }
 \value{
-a numeric matrix vector
+a numeric matrix vector with 3 values ( rvalue, tau and amplitude)
 }
 \description{
 :  Calculating Surface Renewal Parameters for a 30 minute - 20 Hz Dataset
