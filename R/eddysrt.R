@@ -9,9 +9,9 @@
 #'
 #' This function will take in the 30 minute -20 Hz dataset and calculate tau, amplitude and r
 #'
-#' @param z 20 rows derived from 20 Hz per second
+#' @param z A value of 20 is utilized (derived from 20 Hz per second of data measurement)
 #' @param df The dataframe consisting of  30 minute - 20 Hz file (30 * 20 * 60)=36000 values
-#' @return a numeric matrix vector
+#' @return a numeric matrix vector with 3 values ( rvalue, tau and amplitude)
 #' @details The matrix vector:rvalue (seconds) - maximum ratio of 3rd moment to r, tau (total ramp duration) and amplitude of ramp
 #' @seealso{NISTunits}
 #' @export
